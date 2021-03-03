@@ -17,7 +17,11 @@ class Customer
   end
   
   def meals
-    self.meal.all 
+    self.meals.all 
+  end
+  
+  def waiters
+    self.waiter.all
   end
   
 
