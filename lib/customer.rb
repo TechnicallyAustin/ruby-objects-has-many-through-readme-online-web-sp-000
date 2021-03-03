@@ -17,11 +17,11 @@ class Customer
   end
   
   def meals
-    Meal.map {|meal| meal.customer == self}
+    Meal.all.select {|meal| meal.customer == self}
   end
   
   def waiters
-     Meals.all.select {|meal| meal.waiter}
+     Meals.map {|meal| meal.waiter}
   end
   
 
